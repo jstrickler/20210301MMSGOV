@@ -1,0 +1,16 @@
+
+Write a script to count how many presidents belong to each party
+
+Strategy A: Use SQL tools
+select count(...)
+
+Strategy B: Use a Python dictionary (or Counter) for counting
+
+from collections import Counter
+
+c = Counter()
+c['whatever'] += 1
+
+print(c)
+
+c = Counter(list_of_parties)

@@ -22,7 +22,12 @@ def main():
         SENDER,
         RECIPIENTS,
         'Here is your attachment',
-        'Testing email attachments from python class at {}\n\n'.format(now),
+        '''
+        <h1>
+        Testing <i>HTML</i> email attachments from python class at {}\n\n
+        <hr/>
+        <h2>
+        '''.format(now),
     )
     add_text_attachment('../DATA/parrot.txt', msg)
     add_image_attachment('../DATA/felix_auto.jpeg', msg)
@@ -35,6 +40,8 @@ def create_message(sender, recipients, subject, body):
     msg['From'] = sender
     msg['To'] = recipients
     msg['Subject'] = subject
+    msg['content-type'] = 'text/html'
+    # msg['cc'] = ...
     return msg
 
 

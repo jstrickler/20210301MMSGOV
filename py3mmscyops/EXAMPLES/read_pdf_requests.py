@@ -19,6 +19,6 @@ if response.status_code == requests.codes.OK:  # <4>
         elif sys.platform == 'darwin':
             cmd = 'open ' + saved_pdf_file
         else:
-            cmd = 'acroread ' + saved_pdf_file
+            cmd = 'atril ' + saved_pdf_file
 
         os.system(cmd)  # <8>

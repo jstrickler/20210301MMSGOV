@@ -2,9 +2,13 @@
 
 import urllib.request
 
-u = urllib.request.urlopen("https://www.python.org")
+response = urllib.request.urlopen("https://www.python.org")
 
-print(u.info())  # <1>
+print(response.headers)  # <1>
+print(response.headers.get('content-type'))
 print()
 
-print(u.read(500).decode())   # <2>
+print(response.read(500).decode())   # <2>
+
+print(response.url)
+print(response.status)
