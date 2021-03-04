@@ -18,3 +18,5 @@ print()
 
 print(df2.values)
 
+print(len(df), len(df2))
+
