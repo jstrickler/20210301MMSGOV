@@ -5,7 +5,7 @@ from threading import Thread, Lock as tlock
 import time
 
 NUM_ITEMS = 25000
-POOL_SIZE = 100
+POOL_SIZE = 64
 
 q = queue.Queue(0)  # <1>
 
@@ -34,7 +34,7 @@ class Worker(Thread):  # <4>
         while True:
             try:
                 s1 = q.get(block=False)  # <7>
-                s2 = s1.upper() + '-' + s1.upper()
+                s2 = s1.upper()
                 with shlist_lock:  # <8>
                     shared_list.append(s2)
 

@@ -24,6 +24,3 @@ def update_code(m):  # <1>
 
 s2 = rx_code.sub(update_code, s)  # <3>
 print(s2)
-
-
-print(re.split('[^A-Za-z]+', s))

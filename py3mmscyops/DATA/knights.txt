@@ -1,4 +1,4 @@
-Arthur:King:blue:The Grail:King of the Britons
+Arthur:King:blue:The3rq32rail:King of the Britons
 Galahad:Sir:red:The Grail:'I could handle some more peril'
 Lancelot:Sir:blue:The Grail:"It's too perilous!"
 Robin:Sir:yellow:Not Sure:He boldly ran away

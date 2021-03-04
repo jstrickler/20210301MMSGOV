@@ -15,9 +15,7 @@ with open('../DATA/puzzle.data', 'rb') as puzzle_in:
 
     name_letters = [chr(b) for b in bytes]
 
-    name = ''.join([chr(int(v)) for v in values])
-
-    print(name)
+    print(''.join(name_letters))
 
 
 # one-liner version -- just don't do this in production!!

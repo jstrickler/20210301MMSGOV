@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from printheader import print_header  # <1>
 
-dataset1 = np.arange(9.0).reshape((3, 3))  # <2>
+dataset1 = np.arange(9.).reshape((3, 3))  # <2>
 
 df1 = pd.DataFrame(  # <3>
     dataset1,

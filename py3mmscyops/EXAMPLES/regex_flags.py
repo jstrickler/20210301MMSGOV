@@ -10,20 +10,20 @@ voluptate velit esse cillum dolore U901 eu fugiat nulla pariatur.
 Excepteur sint occaecat A-110 cupidatat non proident, sunt in H-332 culpa qui 
 officia deserunt Y-45 mollit anim id est laborum"""
 
-pattern = r'[A-Z]  -  \d{2,3}'
+pattern = r'[A-Z]-\d{2,3}'
 
-if re.search(pattern, s,  re.I | re.M | re.X):  # <1>
+if re.search(pattern, s, re.IGNORECASE):  # <1>
     print("Found pattern.")
 print()
 
-m = re.search(pattern, s, re.I | re.M | re.X)  # <2>
+m = re.search(pattern, s, re.I | re.M)  # <2>
 if m:
     print("Found:", m.group())
 print()
 
-for m in re.finditer(pattern, s, re.I | re.X):
+for m in re.finditer(pattern, s, re.I):
     print(m.group())
 print()
 
-matches = re.findall(pattern, s, re.I| re.X)
+matches = re.findall(pattern, s, re.I)
 print("matches:", matches)

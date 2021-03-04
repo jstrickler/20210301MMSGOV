@@ -5,7 +5,7 @@ Fetch a word definition from Merriam-Webster's API
 import sys
 from urllib.request import Request, urlopen
 import json
-from pprint import pprint
+# from pprint import pprint
 
 DATA_TYPE = 'application/json'
 
@@ -30,8 +30,8 @@ def do_query(url):
     response = urlopen(request)  # <3>
     raw_json_string = response.read().decode()  # <4>
     data = json.loads(raw_json_string)  # <5>
-    print("RAW DATA:")
-    pprint(data)
+    # print("RAW DATA:")
+    # pprint(data)
     for entry in data:  # <6>
         if isinstance(entry, dict):
             meta = entry.get("meta") # <7>

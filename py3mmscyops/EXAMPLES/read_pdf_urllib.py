@@ -12,13 +12,13 @@ url = 'https://www.nasa.gov/pdf/739318main_ISS%20Utilization%20Brochure%202012%2
 saved_pdf_file = 'nasa_iss.pdf'  # <2>
 
 try:
-    response = urlopen(url)  # <3>
+    URL = urlopen(url)  # <3>
 except HTTPError as e:  # <4>
     print("Unable to open URL:", e)
     sys.exit(1)
 
-pdf_contents = response.read()  # <5>
-response.close()
+pdf_contents = URL.read()  # <5>
+URL.close()
 
 with open(saved_pdf_file, 'wb') as pdf_in:
     pdf_in.write(pdf_contents)  # <6>

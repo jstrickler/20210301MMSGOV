@@ -8,12 +8,3 @@ s1 = '''There are 10 kinds of people in a Binary world, I hear" -- Geek talk'''
 
 words = rx_wordsep.split(s1)  # <2>
 print(words)
-
-# [A-Za-z]+
-
-
-
-
-
-
-

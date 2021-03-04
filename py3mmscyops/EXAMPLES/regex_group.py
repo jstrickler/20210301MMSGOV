@@ -10,9 +10,6 @@ voluptate velit esse cillum dolore U901 eu fugiat nulla pariatur.
 Excepteur sint occaecat A-110 cupidatat non proident, sunt in H-332 culpa qui 
 officia deserunt Y-45 mollit anim id est laborum"""
 
-#        2           xxxxxx
-#        1   xxxxx
-#        0  xxxxxxxxxxxxxxxxx
 pattern = r'([A-Z])-(\d{2,3})'  # <1>
 
 for m in re.finditer(pattern, s):
@@ -22,14 +19,3 @@ print()
 
 matches = re.findall(pattern, s)  # <3>
 print("matches:", matches)
-
-#  ssn = r'\d{3}-\d{2}-(\d{4})'
-
-#  ssn = r'(\d{3})(?P<sep>[^\d\s])(\d{2})(?P=sep)(\d{4})']]
-
-#  r'\d{10}(?=[:;])'
-#  r'\d{10}(?![a-z])'
-
-
-
-

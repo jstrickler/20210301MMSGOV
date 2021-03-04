@@ -27,11 +27,6 @@ print(df.beta, '\n')  # <6>
 print_header("df['b':'e']")
 print(df['b':'e'], '\n')  # <7>
 
-print_header("df['b':'b']")
-print(df['b':'b'], '\n')  # <7>
-
-
-
 print_header("df[['alpha','epsilon','beta']]")
 print(df[['alpha', 'epsilon', 'beta']])  # <8>
 print()

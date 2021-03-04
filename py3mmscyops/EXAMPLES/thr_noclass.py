@@ -3,6 +3,7 @@
 import threading
 import random
 import time
+from os import cpu_count
 
 
 def doit(num):  # <1>
@@ -15,3 +16,4 @@ for i in range(10):
     t.start()  # <3>
 
 print("Done.")  # <4>
+print(cpu_count())

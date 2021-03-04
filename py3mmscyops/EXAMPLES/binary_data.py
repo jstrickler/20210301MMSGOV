@@ -8,8 +8,6 @@ demo = Struct('iif10s')  # <2>
 
 print("Size of data: {} bytes".format(demo.size)) # <3>
 
-binary_stream = demo.pack(values[0], values[1], values[2], values[3]) # <4>
-
 binary_stream = demo.pack(*values) # <4>
 
 int1, int2, float1, raw_bytes = demo.unpack(binary_stream) # <5>

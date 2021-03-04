@@ -13,7 +13,6 @@ print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
 print("selecting elements")
-print(s1['h'])
 print(s1[['h', 'b']], "\n")  # <4>
 
 print(s1[['a', 'b', 'c']], "\n")  # <4>

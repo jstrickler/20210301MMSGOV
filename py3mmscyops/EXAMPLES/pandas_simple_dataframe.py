@@ -27,11 +27,5 @@ df = pd.DataFrame(values, index=indices, columns=cols)  # <4>
 print_header('DataFrame df')
 print(df, '\n')
 
-
 print_header("df['gamma']")
 print(df['gamma'])  # <5>
-
-df2 = pd.DataFrame(values)
-print_header('Dataframe df2')
-print(df2, '\n')
-

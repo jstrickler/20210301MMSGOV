@@ -3,14 +3,15 @@
 from struct import Struct
 
 # short int short short int (native, unsigned)
-s = Struct('=2cI4xI')  # <1>
+s = Struct('=HIHHI')  # <1>
 
 with open('../DATA/chimp.bmp', 'rb') as chimp_in:
     chimp_bmp = chimp_in.read(s.size)  # <2>
 
-(signature1, signature2, size, offset) = s.unpack(chimp_bmp)  # <3>
+(signature, size, reserved1, reserved2, offset) = s.unpack(chimp_bmp)  # <3>
 
-print("signature:", signature1, signature2)  # <4>
+print("signature:", signature)  # <4>
 print('size:', size)
+print('reserved1:', reserved1)
+print('reserved2:', reserved2)
 print('offset:', offset)
-print(list(chimp_bmp))
