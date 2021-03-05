@@ -1,0 +1,8 @@
+findPics.py
+Place the script in a dirctory in order to find images recursively.
+Execute ex: python3 findPics.py
+
+geoPic.py
+Place the script in the same directory as the image. Add a filename arguement to the script
+Execute ex: python3 geoPic.py night.jpg 
+
